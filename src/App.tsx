@@ -5,7 +5,7 @@ import { Text } from 'react-native'
 const App:React.FC = () =>{
   return(
     <>
-      <Text> Spotify Clone </Text>
+      <Text style={{fontFamily: 'OpenSans-Regular', color:'blue'}}> Spotify Clone </Text>
     </>
 
   )
