@@ -1,13 +1,17 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-
-import { Text } from 'react-native'
-
+import {NavigationContainer} from '@react-navigation/native'
+import {  View,StatusBar } from 'react-native'
+import Routes from './routes/index'
 const App:React.FC = () =>{
   return(
-    <>
-      <Text style={{fontFamily: 'OpenSans-Regular', color:'blue'}}> Spotify Clone </Text>
-    </>
+    <NavigationContainer>
+    <StatusBar  backgroundColor="#030404" />
+    <View style={{flex: 1, backgroundColor:'#030304'}}>
+     <Routes/>
+    </View>
+
+    </NavigationContainer>
 
   )
 }
