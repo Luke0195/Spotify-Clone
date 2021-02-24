@@ -1,10 +1,15 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 
-import FeedScreen from '../pages/Feed';
+import FoundationIcons from 'react-native-vector-icons/Foundation';
+import Feather from 'react-native-vector-icons/Feather';
+import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+
+
+import HomeScreen from '../pages/Feed';
 import SearchScreen from '../pages/Search'
-import MusicsScreen from '../pages/Musics'
-import PodcastScreen from '../pages/Podcast'
+import LibaryScreen from '../pages/Musics'
 
 
 const Tabs = createBottomTabNavigator();
@@ -16,27 +21,53 @@ return(
     tabBarOptions={{
       style:{
         backgroundColor:'#212121',
-        paddingBottom:10,
-        height:70
+        paddingBottom:8,
+        height:75,
+
+
       },
       labelStyle:{
-        fontSize: 13,
-        fontFamily:'OpenSans-SemiBold'
+        fontSize:14,
+        lineHeight:24,
+        fontFamily:'OpenSans-Regular',
+        textAlign:'center'
       },
-
       activeTintColor:'#ffff',
       inactiveTintColor:'rgba(179, 179, 179, 0.5)'
-
-
-
     }}
-
-
+      initialRouteName="HomeScreen"
   >
-  <Tabs.Screen name="Feed" component={FeedScreen}/>
-  <Tabs.Screen name="Search" component={SearchScreen}/>
-  <Tabs.Screen name="Musics" component={MusicsScreen}/>
-  <Tabs.Screen name="Podcasts" component={PodcastScreen}/>
+  <Tabs.Screen
+  name="Home"
+  component={HomeScreen}
+  options={{
+    tabBarIcon:({color, size}) =>(
+      <FoundationIcons name="home" size={size} color={color}/>
+    )
+  }}
+
+  />
+  <Tabs.Screen
+   name="Search"
+   component={SearchScreen}
+   options={{
+    tabBarIcon:({color, size}) =>(
+      <Feather name="search" size={size} color={color}/>
+    )
+  }}
+
+   />
+  <Tabs.Screen
+  name="YourLibary"
+  component={LibaryScreen}
+  options={{
+    tabBarIcon:({color, size}) =>(
+      <MaterialIcons name="bookshelf" size={size} color={color}/>
+    ),
+
+  }}
+
+  />
 </Tabs.Navigator>
 
 )

@@ -3,7 +3,7 @@ import {Text} from 'react-native'
 const Feed:React.FC  =() =>{
   return(
   <>
-      <Text> My Feed </Text>
+      <Text> Home Screen </Text>
   </>
   )
 }
