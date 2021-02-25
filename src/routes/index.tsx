@@ -23,6 +23,8 @@ return(
         backgroundColor:'#212121',
         paddingBottom:8,
         height:75,
+        borderTopWidth: 1,
+        borderTopColor:'#030404'
 
 
       },
