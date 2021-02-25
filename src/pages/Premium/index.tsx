@@ -2,12 +2,12 @@ import React from 'react';
 import {Text} from 'react-native';
 
 
-const Podcasts:React.FC = () =>{
+const Premium:React.FC = () =>{
   return(
     <>
-      <Text> Podcast </Text>
+      <Text> Premium </Text>
     </>
   )
 }
 
-export default Podcasts;
+export default Premium;
