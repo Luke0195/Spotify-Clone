@@ -32,7 +32,7 @@ return(
       labelStyle:{
         fontSize:14,
         lineHeight:24,
-        fontFamily:'OpenSans-SemiBold',
+        fontFamily:'GothamBook',
         textAlign:'center'
       },
       activeTintColor:'#ffff',

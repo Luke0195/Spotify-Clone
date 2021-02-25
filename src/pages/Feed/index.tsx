@@ -1,12 +1,18 @@
 import React from  'react';
-import {Container} from './styles'
-import {Text} from 'react-native'
+import {Container, Header, HeaderTitle,HeaderTopContent} from './styles';
+
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+
 const Feed:React.FC  =() =>{
   return(
   <>
       <Container>
-
-      <Text> Home Screen </Text>
+        <Header>
+           <HeaderTopContent>
+             <HeaderTitle> Bom dia </HeaderTitle>
+              <EvilIcons name="gear" size={32} color="#f5f5f5"/>
+           </HeaderTopContent>
+        </Header>
       </Container>
   </>
   )
