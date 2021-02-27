@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container, Wrapper, Header,Title} from './styles';
-
-import TrendingComponent from '../../components/Trending'
-import RecentyComponent from '../../components/RecentPlayed'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
+
+import TrendingComponent from '../../components/Trending';
+import RecentyComponent from '../../components/RecentPlayed';
+import MadeForYou from '../../components/MadeForYou'
+
+import { Container, Wrapper, Header,Title} from './styles';
 
 const Feed:React.FC = () =>{
   return(
@@ -16,6 +18,7 @@ const Feed:React.FC = () =>{
           <Title> Good Afternoon </Title>
           <TrendingComponent/>
           <RecentyComponent/>
+          <MadeForYou/>
 
 
       </Container>

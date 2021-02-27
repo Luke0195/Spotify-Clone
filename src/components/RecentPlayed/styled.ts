@@ -12,8 +12,8 @@ export const Section = styled.ScrollView.attrs(() =>({
 
 export const Title = styled.Text`
  padding: 0 6px;
- font-size: 30px;
- line-height:26px;
+ font-size: 25px;
+ line-height:25px;
  margin-top: 40px;
  color:#fff;
  font-family:'Gotham-Bold';
@@ -31,26 +31,26 @@ export const SectionCards = styled.View`
 
 `;
 
-export const SectionCard = styled.View`
+export const SectionCard = styled.TouchableOpacity`
  width:180px;
  flex-direction:column;
  align-items:center;
  justify-content:center;
- margin: 0 16px;
+ margin: 0 6px;
 
 
 `;
 
 
 export const SectionImage = styled.Image`
- width:180px;
- height:180px;
+ width:150px;
+ height:150px;
 
 `;
 
 export const SectionLabel = styled.Text`
-font-size: 24px;
-line-height:24px;
+font-size: 18px;
+line-height:18px;
 margin-top:15px;
 text-align:center;
 color:#f5f6f7;

@@ -25,21 +25,21 @@ export const SectionCard = styled.View`
  flex-direction:column;
  align-items:center;
  justify-content:center;
- margin: 0 16px;
+ margin: 0 5px;
 
 
 `;
 
 
 export const SectionImage = styled.Image`
- width:180px;
- height:180px;
+ width:150px;
+ height:150px;
 
 `;
 
 export const SectionLabel = styled.Text`
-font-size: 24px;
-line-height:24px;
+font-size: 17px;
+line-height:17px;
 margin-top:15px;
 text-align:center;
 color:#f5f6f7;
@@ -48,8 +48,8 @@ font-family:'GothamBold';
 
 export const SectionDescription = styled.Text`
 margin-top: 8px;
-font-size: 16px;
-line-height:25px;
+font-size: 14px;
+line-height:24px;
 color:#fff;
 font-family:'Gotham';
 text-align:center;
