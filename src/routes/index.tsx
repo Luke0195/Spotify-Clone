@@ -38,7 +38,7 @@ return(
       activeTintColor:'#ffff',
       inactiveTintColor:'rgba(179, 179, 179, 0.3)'
     }}
-      initialRouteName="HomeScreen"
+      initialRouteName="Search"
   >
   <Tabs.Screen
   name="Home"

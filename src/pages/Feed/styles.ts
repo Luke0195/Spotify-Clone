@@ -19,8 +19,8 @@ export const Header = styled.View`
 
 export const Title = styled.Text`
  padding: 0 6px;
- font-size: 26px;
- line-height:26px;
+ font-size: 23px;
+ line-height:23px;
  color:#fff;
  font-family:'Gotham-Bold';
 `;

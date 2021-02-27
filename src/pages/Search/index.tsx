@@ -1,9 +1,13 @@
 import React from 'react';
-import {Text} from 'react-native'
+import {Wrapper,Container,Title} from './styles';
 
 const Search:React.FC  = () =>{
   return(
-    <Text> Search Screen </Text>
+   <Wrapper>
+     <Container>
+       <Title> Search</Title>
+     </Container>
+   </Wrapper>
   )
 }
 

@@ -15,7 +15,7 @@ const Feed:React.FC = () =>{
         <Header>
             <EvilIcons  name="gear" color="#fff" size={32}/>
         </Header>
-          <Title> Good Afternoon </Title>
+          <Title> Good Afternoon Lucas </Title>
           <TrendingComponent/>
           <RecentyComponent/>
           <MadeForYou/>
