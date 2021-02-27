@@ -1,47 +1,78 @@
 import styled from 'styled-components/native';
 
+
 export const Wrapper = styled.SafeAreaView`
  flex: 1;
- background:#030404;
-`;
-
-export const Container = styled.ScrollView``;
+ background:#030304;
+`
+export const Container = styled.ScrollView``
 
 export const Header = styled.View`
- height: 60px;
- background:rgba(179, 179, 179, 0.3);
+ margin: 35px 0 20px 0;
+ height: 30px;
+
  flex-direction:row;
  align-items:center;
- justify-content:space-between;
- padding: 0 8px;
-`;
+ justify-content:flex-end;
+ padding: 0 10px;
+`
+
+export const Section = styled.ScrollView.attrs(() =>({
+  horizontal:true,
+}))`
+ padding: 3px 0;
+ margin-top: 10px;
+
+ `;
 
 
-export const Main = styled.View`
- width: 100%;
- max-width: 300px;
- margin: 50px auto;;
- flex-direction:column;
- align-items:center;
-
-`;
-export const MainTitle = styled.Text`
+export const Title = styled.Text`
+ padding: 0 6px;
+ font-size: 30px;
+ line-height:26px;
  color:#fff;
- margin-bottom: 15px;
- font-size:25px;
- line-height: 35px;
  font-family:'Gotham-Bold';
 `;
-export const MainImage = styled.Image`
- width: 240px;
- height: 250px;
- border-radius: 4px;
+
+
+export const SectionCards = styled.View`
+ flex-direction:row;
+ margin-top: 15px;
+
+
 `;
-export const MainText = styled.Text`
-color:#fff;
-font-size:15px;
-line-height:25px;
+
+export const SectionCard = styled.View`
+ width:180px;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ margin: 0 16px;
+
+
+`;
+
+
+export const SectionImage = styled.Image`
+ width:180px;
+ height:180px;
+
+`;
+
+export const SectionLabel = styled.Text`
+font-size: 24px;
+line-height:24px;
+margin-top:15px;
 text-align:center;
-font-family:'GothamRegular';
+color:#f5f6f7;
+font-family:'GothamBold';
+`;
+
+export const SectionDescription = styled.Text`
 margin-top: 8px;
+font-size: 16px;
+line-height:25px;
+color:#fff;
+font-family:'Gotham';
+text-align:center;
 `;
