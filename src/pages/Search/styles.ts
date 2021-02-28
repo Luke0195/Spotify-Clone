@@ -19,3 +19,9 @@ export const Title  = styled.Text`
  font-family: 'Gotham-Bold';
 
 `;
+
+export const Header = styled.View`
+
+
+`;
+
