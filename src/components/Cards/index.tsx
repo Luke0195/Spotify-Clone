@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,CardContent,CardItem,CardText} from './styles';
-
+import {useNavigation} from '@react-navigation/native';
 const mocks = [
   {
     key: String(Math.random()),
@@ -70,7 +70,7 @@ const Cards:React.FC = () =>{
     <Container>
       <CardContent>
         {mocks.map(mock =>(
-          <CardItem key={mock.key} bg={mock.bgColor}>
+          <CardItem key={mock.key} bg={mock.bgColor} >
             <CardText> {mock.title}</CardText>
           </CardItem>
         ))}

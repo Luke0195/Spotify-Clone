@@ -21,7 +21,7 @@ export const CardItem = styled.TouchableOpacity<CardProps>`
  background:${(props => props.bg)};
  height: 100px;
  border-radius:4px;
- opacity:0.7;
+ opacity:0.8;
 `;
 
 export const CardText = styled.Text`
