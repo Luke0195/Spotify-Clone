@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,CardContent,CardItem,CardText} from './styles';
-import {useNavigation} from '@react-navigation/native';
+
 const mocks = [
   {
     key: String(Math.random()),
