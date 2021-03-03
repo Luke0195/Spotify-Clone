@@ -1,79 +1,61 @@
 import styled  from 'styled-components/native';
 
-export const Container = styled.View`
- flex: 1;
- background-color:#030304;
- margin-top:20px;
- align-items:center;
-`;
 
+export const Wrapper = styled.ScrollView`
+flex: 1;
+background:#030304;
+
+`
+export const Container = styled.View`
+flex:1;
+background:#030404;
+margin: 30px 8px;
+`;
 
 export const Header = styled.View`
-width: 100%;
- margin: 35px 10px;
- flex-direction:row;
+ flex-direction: row;
  align-items:center;
  justify-content:space-between;
-
 `;
 
-export const HeaderContent= styled.View`
- width: 80px;
- flex-direction:row;
- justify-content:space-between;
-
-`;
-
-export const Card = styled.View`
- width: 300px;
- height: 230px;
-
- align-items:center;
-
-`;
-
-export const CardImage = styled.Image`
-width: 200px;
-height: 200px;
-
-
-`;
-
-export const CardText = styled.Text`
- width: 250px;
+export const HeaderTitle = styled.Text`
  color:#fff;
- text-align:center;
- margin-top: 10px;
- font-size: 16px;
- line-height:26px;
-`;
-
-export const CardTitle = styled.Text`
-font-size: 16px;
-font-family: 'Gotham';
-color: #ccc;
-opacity:0.8;
-
-`
-
-export const CardStrong = styled.Text`
- font-size:22px;
- color:#fff;
- font-family:'Gotham-Bold';
- margin: 16px 0;
-`;
-
-export const CardButtonText = styled.Text`
  font-size: 18px;
- font-family:'Gotham-Bold';
- color:#f5f6f9;
+ line-height:28px;
+ font-family: 'GothamBold';
+`;
+
+export const Section = styled.View`
+ margin-top: 25px;
+
+ align-items:center;
+`;
+
+export const SectionTitle = styled.Text`
+ font-size: 23px;
+ text-align:center;
+ color:#fff;
+ font-family:'GothamBold';
+`;
+
+export const SectionButton = styled.TouchableOpacity`
+  margin: 25px 0;
+  background:#1ed760;
+  width:240px;
+  height:50px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50px;
 
 `;
-export const CardButton = styled.TouchableOpacity`
- width: 200px;
- height: 50px;
- background:#3eb842;
- align-items:center;
- justify-content:center;
- border-radius:30px;
-`
+
+export const SectionButtonText = styled.Text`
+  color:#f5f7f9;
+  text-transform:uppercase;
+  font-family:'GothamBold';
+  letter-spacing:2px;
+
+
+`;
+
+
