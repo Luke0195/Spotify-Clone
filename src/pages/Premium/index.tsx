@@ -1,12 +1,18 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Container,Title, Content,Button,ButtonText} from './styles';
+
 
 
 const Premium:React.FC = () =>{
   return(
-    <>
-      <Text> Premium </Text>
-    </>
+    <Container>
+        <Content>
+          <Title>  Get news features for your spotify  </Title>
+          <Button>
+            <ButtonText> Get Premium Now </ButtonText>
+          </Button>
+        </Content>
+    </Container>
   )
 }
 
